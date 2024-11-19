@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+
+    box-sizing: border-box;
+    font-family: 'mukta' sans-serif;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-top: 10px;
+
+}
+
+.logo-mario {
+
+    height: 300px;
+ 
+
+}
+
+.logo-mario-luigi {
+    height: 500px;
+
+
+}
+
+
+button {
+
+    color: white;
+    background-color: grey;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 40px;
+
+}
+
+button:hover {
+
+    opacity: 0.6;
+
+    transform: scale(1.05);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    position: fixed;
+    height: 100vh;
+
+}
+
+
+.caixa-principal {
+    width: 40%;
+
+padding: 30px;
+}
+
+.video-mario {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+
+
+
+}
+
+video {
+    width: 100vw;
+
+
+}
+
+
+.mascara {
+    height: 100%;
+    width: 100vw;
+    background: rgb(57, 57, 60);
+    background: linear-gradient(90deg, rgba(57, 57, 60, 0.7189075459285277) 0%, rgba(230, 230, 233, 0.1530812153963148) 100%);
+    position: fixed;
+    top: 0;
+
+
+}
+
+.cabeçalho {
+    display: flex;
+    align-items: center;
+    left: 10px;
+    gap: 30px;
+    position: fixed;
+    top: 0;
+    margin: 15px;
+
+
+}
+
+.cabeçalho img {
+
+    height: 50px;
+
+
+}
+
+.cabeçalho a {
+
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.cabeçalho a:hover {
+    color: grey;
+    font-size: 26px;
+    transition: 0.5s ease-in-out
+}
+
+.whathsapp {
+
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+}
+
+.whathsapp img:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+
+
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+}
+
+
+.formulario-fale-conosco {
+    background-color: rgba(245, 238, 232, 0.781);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: -300px;
+    top: 30%;
+    padding: 20px;
+    border-radius: 5px;
+    gap: 20px;
+    z-index: 1;
+    transition: left 1s ease-in-out;
+}
+
+input {
+
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: white
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: rgb(255, 255, 255)
+}
+
+.instagram {
+    height: 70px;
+    position: fixed;
+    right: 10px;
+    bottom: 90px;
+    cursor: pointer;
+}
+
+.instagram img:hover {
+
+    opacity: 0.7;
+    transform: scale(1.1);
+
+
+}
+
+@media(max-width:1100px) {
+
+    p {
+        display: none;
+    }
+
+    body {
+        flex-direction: column;
+        padding: 29px;
+        margin: 0;
+        left: 100px;
+    }
+
+    .caixa-principal {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        justify-content: flex-start;
+    }
+
+    .logo-mario-luigi {
+        width: 80vw;
+        height: auto;
+    }
+
+    .video-mario {
+        padding: 400px;
+        position: fixed;
+        width: 100vw;
+
+
+    }
+
+    .cabeçalho {
+        margin: 10px;
+    }
+
+
+}
